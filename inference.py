@@ -36,7 +36,7 @@ def classify_image(filename, headers):
                 top_k = predictions[0].argsort()[-len(predictions[0]):][::-1]
                 records = []
                 row_dict = {}
-                #head, tail = os.path.split(file)
+                
                 row_dict['id'] = filename.split('.')[0]
                 
                 
