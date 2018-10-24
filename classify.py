@@ -37,9 +37,25 @@ def classify_image(image_path, headers):
                 row_dict['id'] = tail.split('.')[0]
 
                 for node_id in top_k:
-                    print("node_id=", node_id)
                     human_string = label_lines[node_id]
+                    human_string = human_string.replace(" ","_")
+                    print("node_id=", node_id)
                     score = predictions[0][node_id]
+                    if(human_string == 'german_short_haired_pointer'):
+                        human_string = 'german_short-haired_pointer'
+                    if(human_string == 'shih_tzu'):
+                        human_string = 'shih-tzu'
+                    if(human_string == 'wire_haired_fox_terrier'):
+                        human_string = 'wire-haired_fox_terrier'
+                    if(human_string == 'curly_coated_retriever'):
+                        human_string = 'curly-coated_retriever'
+                    if(human_string == 'black_and_tan_coonhound'):
+                        human_string = 'black-and-tan_coonhound'
+                    if(human_string == 'soft_coated_wheaten_terrier'):
+                        human_string = 'soft-coated_wheaten_terrier'  
+                    if(human_string == 'flat_coated_retriever'):
+                    	human_string = 'flat-coated_retriever' 
+                    
                     print('%s (score = %.5f)' % (human_string, score))
                     row_dict[human_string] = score
                 print("--------  Next Image ----------------")
