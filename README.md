@@ -1,9 +1,9 @@
 
-#Preproccessing of data - 
+# Preproccessing of data - 
 
 Organized the images into the respective folders using preprocessing function named folder_creation()
 
-#Image classification of data
+# Image classification of data
 
 We use transfer learning method for this classification. For this I used retrain.py function released by Tensorflow for 
 retraining a given model.
@@ -17,9 +17,9 @@ Testing_percentage: 10
 Valiation_percentage: 10
 Batch size for training: 100
 
-#Inference data
+# Inference data
 
-run inference.py filename.jpg
+> run inference.py filename.jpg
 
 
 
