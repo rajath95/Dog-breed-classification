@@ -1,5 +1,5 @@
 
-# Preproccessing of data - 
+# Preproccessing of data 
 
 Organized the images into the respective folders using preprocessing function named folder_creation()
 
@@ -19,7 +19,9 @@ Batch size for training: 100
 
 # Inference data
 
-> run inference.py filename.jpg
+I have created an inference file for testing the model
+
+> python inference.py filename.jpg
 
 
 
