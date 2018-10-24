@@ -5,7 +5,7 @@ Organized the images into the respective folders using preprocessing function na
 
 # Image classification of data
 
-We use transfer learning method for this classification. For this I used retrain.py function released by Tensorflow for 
+I used transfer learning method for this classification. For this I used retrain.py function released by Tensorflow for 
 retraining a given model.
 
 I used the default parameters for training the model-
@@ -23,7 +23,9 @@ I have created an inference file for testing the model
 
 > python inference.py filename.jpg
 
+# Kaggle Submission
 
+With regards, to Kaggle submission, I got a score of 4.7849.
 
 
 
