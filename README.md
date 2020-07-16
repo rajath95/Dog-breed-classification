@@ -32,9 +32,7 @@ I have created an inference file for testing the model
 
 > python inference.py filename.jpg
 
-# Kaggle Submission
 
-With regards, to Kaggle submission, I got a score of 4.7849.
 
 
 
